@@ -22,5 +22,8 @@ public class Main {
         System.out.println("Demo Fork4");
         System.out.println("Demo Fork5");
         System.out.println("Demo Fork6");
+        
+        System.out.println("Demo Fork5");
+        System.out.println("Demo Fork6");
     }
 }
