@@ -1,0 +1,34 @@
+package model;
+
+import java.time.LocalDate;
+
+public class RecurringTask extends Task {
+    private String recurrencePattern;
+    private LocalDate dueDate;
+
+    public RecurringTask(int id, String title, String description, LocalDate dueDate, String recurrencePattern) {
+        super(id, title, description);
+        this.dueDate = dueDate;
+        this.recurrencePattern = recurrencePattern;
+    }
+
+    public String getRecurrencePattern() {
+        return this.recurrencePattern;
+    }
+
+    public void setRecurrencePattern(String recurrencePattern) {
+        this.recurrencePattern = recurrencePattern;
+    }
+
+    public LocalDate getDueDate() {
+        return this.dueDate;
+    }
+
+    public void setDueDate(LocalDate dueDate) {
+        this.dueDate = dueDate;
+    }
+
+    public String getTaskType() {
+        return "RecurringTask";
+    }
+}
